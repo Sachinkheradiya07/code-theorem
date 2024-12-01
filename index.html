@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img src="/logo.jpg" alt="logo" class="img-logo" />
+        <hr />
+        <nav>
+          <ul class="list">
+            <div class="dashboard-icon">
+              <ol class="active">
+                <i class="fa-regular fa-window-maximize"></i>
+                Dashboard
+              </ol>
+            </div>
+            <ol>
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+              Invoices
+            </ol>
+            <ol>
+              <i class="fa-solid fa-file-signature"></i>
+              Proposals
+            </ol>
+            <ol>
+              <i class="fa-solid fa-concierge-bell"></i>
+              Services
+            </ol>
+            <ol>
+              <i class="fa-solid fa-money-check-dollar"></i>
+              Transactions
+            </ol>
+            <ol>
+              <i class="fa-solid fa-folder-open"></i>
+              Projects
+            </ol>
+            <ol>
+              <i class="fa-solid fa-user-group"></i>
+              Customers
+            </ol>
+          </ul>
+        </nav>
+        <div class="settings">
+          <span><i class="fa-solid fa-gear"></i>Settings</span>
+          <span
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</span
+          >
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Header -->
+        <header>
+          <div class="header">
+            <div class="header-left">
+              <h2 style="color: #f9fafc; margin-left: 26px">
+                Hi, Welcome back <span style="color: aqua">Robert!</span>
+              </h2>
+
+              <h3 style="margin-top: 90px; margin-left: 26px; color: #f9fafc">
+                Finance Overview
+              </h3>
+            </div>
+            <div class="header-right">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search..." />
+              </div>
+              <i class="fa-regular fa-bell"></i>
+              <img
+                src="/20201115_235657.jpg"
+                alt="Profile"
+                class="profile-image"
+              />
+            </div>
+          </div>
+          <!-- Header Cards -->
+          <div class="finance-overview">
+            <div class="card">
+              <h3>Sales</h3>
+              <p>$2,772.00</p>
+            </div>
+            <div class="card">
+              <h3>Expenses</h3>
+              <p>$4,010.00</p>
+            </div>
+            <div class="card">
+              <h3>Profit</h3>
+              <p>$5,123.00</p>
+            </div>
+            <div class="card">
+              <h3>Income</h3>
+              <p>$1,640.00</p>
+            </div>
+          </div>
+        </header>
+        <div class="table-main">
+          <div class="heading-table">
+            <h4>Current Projects</h4>
+            <button>Create</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Customer</th>
+                <th>Sent Date</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Travel app design</td>
+                <td>Jacob James</td>
+                <td>28 Oct 2022</td>
+                <td>$24,000</td>
+                <td>
+                  <button style="background-color: #e8fbf7; color: #1bd2aa">
+                    SENT
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>UX Research</td>
+                <td>Wade Warren</td>
+                <td>18 Oct 2022</td>
+                <td>$14,000</td>
+                <td><button>DRAFT</button></td>
+              </tr>
+              <tr>
+                <td>Redesign - Food delivery app</td>
+                <td>Annette Black</td>
+                <td>18 Oct 2022</td>
+                <td>$14,000</td>
+                <td>
+                  <button style="background-color: #e8fbf7; color: #1bd2aa">
+                    PAID
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Web App - Online Learning</td>
+                <td>Cameron Williamson</td>
+                <td>18 Oct 2022</td>
+                <td>$14,000</td>
+                <td>
+                  <button style="background-color: #e8fbf7; color: #1bd2aa">
+                    PAID
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Railway web casestudy</td>
+                <td>Robert Fox</td>
+                <td>13 Oct 2022</td>
+                <td>$14,000</td>
+                <td>
+                  <button style="background-color: #e8fbf7; color: #1bd2aa">
+                    SENT
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Responsive web design</td>
+                <td>Floyd Miles</td>
+                <td>06 Oct 2022</td>
+                <td>$ 140.90</td>
+                <td>
+                  <button
+                    style="background-color: rgb(240, 153, 153); color: red"
+                  >
+                    REJECTED
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>Music app design</td>
+                <td>Theresa Webb</td>
+                <td>04 Oct 2022</td>
+                <td>$ 345.90</td>
+                <td><button>DRAFT</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Events Section -->
+        <div class="events-section">
+          <h2>Events</h2>
+          <div class="event">
+            <img src="/20201115_235657.jpg" alt="User Avatar" />
+            <div class="event-details">
+              <h4 class="event-name">Wade Warren</h4>
+              <p class="event-info">🎂 Birthday • Today</p>
+            </div>
+            <button class="event-button">Wish</button>
+          </div>
+          <div class="event">
+            <img src="/20201115_235657.jpg" alt="User Avatar" />
+            <div class="event-details">
+              <h4 class="event-name">Wade Warren</h4>
+              <p class="event-info">🎉 Joining Us • Today</p>
+            </div>
+            <button class="event-button">Congratulations</button>
+          </div>
+          <div class="event">
+            <img src="/20201115_235657.jpg" alt="User Avatar" />
+            <div class="event-details">
+              <h4 class="event-name">Wade Warren</h4>
+              <p class="event-info">🎖 Work Anniversary • 7 September, 2022</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="/20201115_235657.jpg" alt="User Avatar" />
+            <div class="event-details">
+              <h4 class="event-name">Wade Warren</h4>
+              <p class="event-info">🎂 Birthday • Today</p>
+            </div>
+            <button class="event-button">Wish</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
