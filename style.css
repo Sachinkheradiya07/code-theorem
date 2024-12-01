@@ -271,11 +271,12 @@ table td button {
     flex-direction: column;
     text-align: center;
     padding: 15px;
+    width: 100%;
   }
 
   .header-right {
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 2px;
   }
 
   .finance-overview {
